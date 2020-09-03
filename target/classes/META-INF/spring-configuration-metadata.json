@@ -1,0 +1,82 @@
+{
+  "groups": [
+    {
+      "name": "spring.datasource.ams",
+      "type": "com.pccw.data.migration.configs.AmsProperties",
+      "sourceType": "com.pccw.data.migration.configs.AmsProperties"
+    },
+    {
+      "name": "spring.datasource.ars",
+      "type": "com.pccw.data.migration.configs.ArsProperties",
+      "sourceType": "com.pccw.data.migration.configs.ArsProperties"
+    },
+    {
+      "name": "spring.datasource.pas",
+      "type": "com.pccw.data.migration.configs.PasProperties",
+      "sourceType": "com.pccw.data.migration.configs.PasProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "spring.datasource.ams.driver-class-name",
+      "type": "java.lang.String",
+      "sourceType": "com.pccw.data.migration.configs.AmsProperties"
+    },
+    {
+      "name": "spring.datasource.ams.password",
+      "type": "java.lang.String",
+      "sourceType": "com.pccw.data.migration.configs.AmsProperties"
+    },
+    {
+      "name": "spring.datasource.ams.url",
+      "type": "java.lang.String",
+      "sourceType": "com.pccw.data.migration.configs.AmsProperties"
+    },
+    {
+      "name": "spring.datasource.ams.username",
+      "type": "java.lang.String",
+      "sourceType": "com.pccw.data.migration.configs.AmsProperties"
+    },
+    {
+      "name": "spring.datasource.ars.driver-class-name",
+      "type": "java.lang.String",
+      "sourceType": "com.pccw.data.migration.configs.ArsProperties"
+    },
+    {
+      "name": "spring.datasource.ars.password",
+      "type": "java.lang.String",
+      "sourceType": "com.pccw.data.migration.configs.ArsProperties"
+    },
+    {
+      "name": "spring.datasource.ars.url",
+      "type": "java.lang.String",
+      "sourceType": "com.pccw.data.migration.configs.ArsProperties"
+    },
+    {
+      "name": "spring.datasource.ars.username",
+      "type": "java.lang.String",
+      "sourceType": "com.pccw.data.migration.configs.ArsProperties"
+    },
+    {
+      "name": "spring.datasource.pas.driver-class-name",
+      "type": "java.lang.String",
+      "sourceType": "com.pccw.data.migration.configs.PasProperties"
+    },
+    {
+      "name": "spring.datasource.pas.password",
+      "type": "java.lang.String",
+      "sourceType": "com.pccw.data.migration.configs.PasProperties"
+    },
+    {
+      "name": "spring.datasource.pas.url",
+      "type": "java.lang.String",
+      "sourceType": "com.pccw.data.migration.configs.PasProperties"
+    },
+    {
+      "name": "spring.datasource.pas.username",
+      "type": "java.lang.String",
+      "sourceType": "com.pccw.data.migration.configs.PasProperties"
+    }
+  ],
+  "hints": []
+}

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<configuration>
+    <!--<include resource="org/springframework/boot/logging/logback/base.xml"/>-->
+
+    <appender name="RollingFileDebug" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>/Users/Jim/Documents/project/HK_Project/data-migration/log/data-migration_debug.log</file>
+        <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+            <level>DEBUG</level>
+        </filter>
+        <encoder>
+            <pattern>%d{HH:mm:ss.SSS} [%thread] [%X{sessionId}] %-5level %logger{0} - %msg%n</pattern>
+        </encoder>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>/Users/chenguanlei/Documents/project/HK_Project/data-migration/log/data-migration_debug.log.%d{yyyy-MM-dd}</fileNamePattern>
+        </rollingPolicy>
+    </appender>
+
+    <appender name="RollingFileInfo" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>/Users/Jim/Documents/project/HK_Project/data-migration/log/data-migration_info.log</file>
+        <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+            <level>INFO</level>
+        </filter>
+        <encoder>
+            <pattern>%d{HH:mm:ss.SSS} [%thread] [%X{sessionId}] %-5level %logger{0} - %msg%n</pattern>
+        </encoder>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>/Users/Jim/Documents/project/HK_Project/data-migration/log/data-migration_info.log.%d{yyyy-MM-dd}</fileNamePattern>
+        </rollingPolicy>
+    </appender>
+
+
+    <logger name="com.pccw.avatar.cronJob" level="DEBUG" additivity="false">
+        <appender-ref ref="RollingFileDebug"/>
+        <appender-ref ref="RollingFileInfo"/>
+    </logger>
+
+    <root level="INFO">
+        <appender-ref ref="RollingFileDebug"/>
+        <appender-ref ref="RollingFileInfo"/>
+    </root>
+</configuration>

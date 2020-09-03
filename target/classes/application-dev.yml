@@ -1,0 +1,35 @@
+spring:
+########################    DB    #############################
+  datasource:
+    ars:
+      url: jdbc:oracle:thin:@10.87.60.164:1521:orcl
+      username: gold_ars
+      password: gold_ars123
+      driverClassName: oracle.jdbc.OracleDriver
+    pas:
+      url: jdbc:oracle:thin:@10.87.60.164:1521:orcl
+      username: gold_pas
+      password: gold_pas123
+      driverClassName: oracle.jdbc.OracleDriver
+    ams:
+      url: jdbc:oracle:thin:@10.87.60.164:1521:orcl
+      username: gold_resource
+      password: gold_resource123
+      driverClassName: oracle.jdbc.OracleDriver
+  #    type: com.alibaba.druid.pool.DruidDataSource
+  jpa:
+#    database: mysql
+    show-sql: false
+    hibernate:
+      ddl-auto: update
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+    database-platform: org.hibernate.dialect.Oracle12cDialect
+########################    DB    #############################
+
+  mvc:
+    servlet:
+      path: /ams-data-migration
+
+server:
+  port: 16662
